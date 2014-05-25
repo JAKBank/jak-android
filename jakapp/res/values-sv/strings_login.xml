@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_login">Logga in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_ssn">Personnummer</string>
+    <string name="prompt_password">Lösenord</string>
+    <string name="action_sign_in">Logga in</string>
+    <string name="action_forgot_password">Glömt lösenord?</string>
+    <string name="login_progress_signing_in">Loggar in&#8230;</string>
+    <string name="error_invalid_ssn">Ogiltigt personnummer</string>
+    <string name="error_invalid_password">För kort lösenord</string>
+    <string name="error_incorrect_password">Fel lösenord</string>
+    <string name="error_field_required">Obligatoriskt fält</string>
+
+</resources>

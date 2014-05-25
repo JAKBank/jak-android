@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JAK App</string>
+
+    <string name="login">Inloggning</string>
+    
+    <string-array name="navigation_array">
+        <item>Hem</item>
+        <item>Saldo</item>
+        <item>Bli medlem</item>
+        <item>Kontakt</item>
+    </string-array>
+    
+    <string name="drawer_open">Öppna navigering</string>
+    <string name="drawer_close">Stäng navigering</string>
+</resources>

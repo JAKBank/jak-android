@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hack to get activated color on Android 2.3 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@color/activatedBackground" />
+    <item android:drawable="@android:color/black" />
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JAK App</string>
+
+    <string-array name="navigation_array">
+        <item>Home</item>
+        <item>Balance</item>
+        <item>Join</item>
+        <item>Contact</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation</string>
+    <string name="drawer_close">Close navigation</string>
+</resources>
