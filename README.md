@@ -4,6 +4,7 @@ JAK App is an open source app for JAK Members Bank in Sweden (see https://groups
 
 ### Setting up JAK App in Eclipse
 (Currently we use Eclipse, but we're happy to accept contributions to make it IDE agnostic)
+
 1. Download and install [ADT Bundle](http://developer.android.com/sdk/installing/bundle.html) or install [Eclipse/ADT](http://developer.android.com/sdk/index.html) separately
 2. Clone this project to some place (not in your Eclipse-workspace folder)
 3. In Eclipse choose File-menu > Import > Android > Existing Android Code Into Workspace
