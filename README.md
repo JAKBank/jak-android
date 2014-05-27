@@ -10,7 +10,8 @@ JAK App is an open source app for JAK Members Bank in Sweden (see https://groups
 3. In Eclipse choose File-menu > Import > Android > Existing Android Code Into Workspace
 4. Browse to the source code folder
 5. Check the box and click Finish
-6. Setup android-support-v7-appcompat as a library project in your workspace
+6. Setup [android-support-v7-appcompat as a library project](https://developer.android.com/tools/support-library/setup.html#libs-with-res) in your workspace
+7. Go to the Android preferences of your project and change the path of the support library if it doesn't match already
 
 We just started this project so you will likely run into some issues.
 If you have any questions or suggestions regarding this code please
