@@ -71,6 +71,8 @@ public class MainActivity extends ActionBarActivity {
         if (savedInstanceState == null) {
             selectItem(0);
         }
+
+        getSupportActionBar().setIcon(R.drawable.ic_action_bar);
     }
 
     @Override
