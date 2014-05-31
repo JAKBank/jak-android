@@ -5,7 +5,7 @@
     <!-- Strings related to login -->
     <string name="prompt_ssn">Social security number</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in"><b>Sign in</b> or register</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_forgot_password">Recover lost password</string>
     <string name="login_progress_signing_in">Signing in&#8230;</string>
     <string name="error_invalid_ssn">This social security number is invalid</string>
