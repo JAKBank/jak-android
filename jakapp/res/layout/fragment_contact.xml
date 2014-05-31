@@ -3,4 +3,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jakmap" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/lightGray"
+            android:gravity="left"
+            android:lines="4"
+            android:maxLines="4"
+            android:padding="20dp"
+            android:text="@string/address" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone" />
+
+            <TextView
+                android:id="@+id/telephone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="@string/telephone_number" />
+
+            <TextView
+                android:id="@+id/fax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telephone"
+                android:text="@string/fax" />
+
+            <TextView
+                android:id="@+id/fax_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/telephone_number"
+                android:gravity="right"
+                android:text="@string/fax_number" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fax"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/email_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fax"
+                android:gravity="right"
+                android:text="@string/email_address"
+                android:autoLink="email" />
+
+            <TextView
+                android:id="@+id/telephone_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:text="@string/telephone_times" />
+
+            <TextView
+                android:id="@+id/mon_thu_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/email"
+                android:gravity="right"
+                android:text="@string/mon_thu_times" />
+
+            <TextView
+                android:id="@+id/fri_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/mon_thu_times"
+                android:gravity="right"
+                android:text="@string/fri_times" />
+        </RelativeLayout>
+    </LinearLayout>
+
 </ScrollView>

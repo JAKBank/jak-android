@@ -1,0 +1,13 @@
+<resources>
+    
+    <string name="telephone">Telephone:</string>
+    <string name="telephone_number">0500 &#8211; 46 45 00</string>
+    <string name="fax">Fax:</string>
+    <string name="fax_number">0500 &#8211; 46 45 61</string>
+    <string name="email">Email:</string>
+    <string name="email_address">jak@jak.se</string>
+    <string name="telephone_times">Telephone times:</string>
+    <string name="mon_thu_times">Mon-Thu: 9.30 &#8211; 16.00</string>
+    <string name="fri_times">Fri: 9.30 &#8211; 15.00</string>
+    <string name="address">JAK Medlemsbank\nBox 216\n541 25 Skövde\nVisiting address is Vasagatan 14</string>
+</resources>

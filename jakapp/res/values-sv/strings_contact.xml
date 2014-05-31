@@ -1,0 +1,9 @@
+
+<resources>
+    <string name="telephone">Telefon:</string>
+    <string name="email">Epost:</string>
+    <string name="telephone_times">Telefontider:</string>
+    <string name="mon_thu_times">mån-tor: 9.30 &#8211; 16.00</string>
+    <string name="fri_times">fre: 9.30 &#8211; 15.00</string>
+    <string name="address">JAK Medlemsbank\nBox 216\n541 25 Skövde\nBesöksadressen är Vasagatan 14</string>
+</resources>
