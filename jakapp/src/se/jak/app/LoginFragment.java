@@ -1,5 +1,6 @@
 package se.jak.app;
 
+import se.jak.app.util.LoginUtil;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
@@ -133,7 +134,7 @@ public class LoginFragment extends DialogFragment {
         if (TextUtils.isEmpty(mSsn)) {
             mSsnView.setError(getString(R.string.error_field_required));
             viewWithError = mSsnView;
-        } else if (!checkLuhn(mSsn)) {
+        } else if (!LoginUtil.checkLuhn(mSsn)) {
             mSsnView.setError(getString(R.string.error_invalid_ssn));
             viewWithError = mSsnView;
         }
@@ -150,23 +151,6 @@ public class LoginFragment extends DialogFragment {
             mAuthTask = new UserLoginTask();
             mAuthTask.execute((Void) null);
         }
-    }
-
-    private boolean checkLuhn(String ssn) {
-        int sum = 0;
-        boolean alternate = false;
-        for (int i = ssn.length() - 1; i >= 0; --i) {
-            int n = Integer.parseInt(ssn.substring(i, i + 1));
-            if (alternate) {
-                n *= 2;
-                if (n > 9) {
-                    n = (n % 10) + 1;
-                }
-            }
-            sum += n;
-            alternate = !alternate;
-        }
-        return (sum % 10 == 0);
     }
 
     /**
