@@ -18,7 +18,7 @@ public class LoginUtilTest {
 	
 	@Test
 	public void succeedOnGoodNumber() throws Exception {
-		//Bad number from Wikipedia
+		//Good number from Wikipedia
 		String number = "79927398713";
 		
 		boolean result = LoginUtil.checkLuhn(number);
