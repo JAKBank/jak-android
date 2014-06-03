@@ -13,10 +13,11 @@ JAK App is an open source app for JAK Members Bank in Sweden (see https://groups
 6. Setup [android-support-v7-appcompat as a library project](https://developer.android.com/tools/support-library/setup.html#libs-with-res) in your workspace
 7. Go to the Android preferences of your project and change the path of the support library if it doesn't match already
 
-We use [git-flow](https://github.com/nvie/gitflow) and currently there is only one branch called "develop".
+We use [git-flow](https://github.com/nvie/gitflow) and currently there is one branch called "develop" and one called "master". Push your commits to develop. The master branch is where releases are published.
 
 We just started this project so you will likely run into some issues.
 If you have any questions or suggestions regarding this code please
 contact Adam Nybäck (adam.nyback on Skype or email adam@anyro.se) or
 post in the [google group](https://groups.google.com/forum/#!forum/jakapp).
 Thanks.
+
