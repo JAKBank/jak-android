@@ -1,5 +1,6 @@
 package se.jak.app;
 
+import se.jak.app.LoginFragment.LoginListener;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
@@ -16,7 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements LoginListener {
 
     private static final String URL_JOIN = "http://jak.se/bli-medlem";
 
@@ -144,5 +145,14 @@ public class MainActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggle
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public void onLogin(boolean success) {
+        if (success) {
+            Fragment fragment = new AccountListFragment();
+            mFragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+            mDrawerList.setItemChecked(1, true);
+        }
     }
 }

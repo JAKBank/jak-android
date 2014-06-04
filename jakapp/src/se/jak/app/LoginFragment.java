@@ -47,6 +47,10 @@ public class LoginFragment extends DialogFragment {
     private View mLoginStatusView;
     private TextView mLoginStatusMessageView;
 
+    public interface LoginListener {
+        void onLogin(boolean success);
+    }
+
     public LoginFragment() {
         // Empty constructor required for fragment subclasses
     }
@@ -222,6 +226,8 @@ public class LoginFragment extends DialogFragment {
             showProgress(false);
 
             if (success) {
+                LoginListener activity = (LoginListener) getActivity();
+                activity.onLogin(true);
                 dismiss();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
