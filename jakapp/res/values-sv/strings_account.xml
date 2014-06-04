@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_balance">Kontosaldo</string>
+    <string name="saving_points">Sparpoäng</string>
+</resources>
