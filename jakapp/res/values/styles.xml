@@ -29,9 +29,9 @@
         <item name="background">@color/jakGreen</item>
     </style>
     
-    <color name="jakGreen">#0a6258</color>
-    <color name="lightGray">#d8d8d8</color>
-    <color name="orange">#ffb112</color>
+    <color name="jakGreen">#566b21</color>
+    <color name="lightGray">#99897c</color>
+    <color name="orange">#fca31d</color>
     
     <!-- For Android 2.3 -->
     <color name="activatedBackground">#4455ee</color>
