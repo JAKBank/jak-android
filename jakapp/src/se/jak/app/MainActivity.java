@@ -1,5 +1,6 @@
 package se.jak.app;
 
+import se.jak.app.AccountListFragment.AccountListListener;
 import se.jak.app.LoginFragment.LoginListener;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -17,7 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends ActionBarActivity implements LoginListener {
+public class MainActivity extends ActionBarActivity implements LoginListener, AccountListListener {
 
     private static final String URL_JOIN = "http://jak.se/bli-medlem";
 
@@ -155,4 +156,15 @@ public class MainActivity extends ActionBarActivity implements LoginListener {
             mDrawerList.setItemChecked(1, true);
         }
     }
+
+	@Override
+	public void onAccountChosen(String accountName) {
+		Fragment fragment = new TransactionListFragment();
+		Bundle args = new Bundle();
+        args.putString(TransactionListFragment.ACCOUNT_NAME, accountName);
+        fragment.setArguments(args);
+        mFragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(null).commit();
+        mDrawerList.setItemChecked(1, true);
+		
+	}
 }

@@ -7,10 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-public class AccountListFragment extends ListFragment {
+public class AccountListFragment extends ListFragment  {
 
 	private AccountListAdapter mAdapter;
 
+	public interface AccountListListener {
+        void onAccountChosen(String accountName);
+    }
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -34,6 +38,8 @@ public class AccountListFragment extends ListFragment {
 	
 	@Override
 	public void onListItemClick(ListView lv, View v, int position, long id) {
-		//TODO: show account balance details
+		Account account = (Account)mAdapter.getItem(position);
+		AccountListListener activity = (AccountListListener) getActivity();
+		activity.onAccountChosen(account.getAccountName());
 	}
 }

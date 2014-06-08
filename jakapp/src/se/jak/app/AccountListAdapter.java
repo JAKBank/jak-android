@@ -86,24 +86,20 @@ public class AccountListAdapter  extends BaseAdapter {
 			LayoutInflater inflater = (LayoutInflater)parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			itemView = inflater.inflate(R.layout.account_item, null);
 		}
-		//RelativeLayout itemLayout = (RelativeLayout)itemView.findViewById(R.id.RelativeLayout1);
-		
 
 		//Display account name in account name view
 		final TextView accountNameView = (TextView)itemView.findViewById(R.id.account_name);
 		accountNameView.setText(account.getAccountName());
 
-		//Display account name in account name view
+		//Display account balance in account balance view
 		final TextView accountBalanceView = (TextView)itemView.findViewById(R.id.account_balance);
 		accountBalanceView.setText(account.getBalance().toString());
 
-		//Display account name in account name view
+		//Display account points in account points view
 		final TextView accountPointsView = (TextView)itemView.findViewById(R.id.account_saving_points);
 		accountPointsView.setText(account.getSavingPoints().toString());
 
-
-		// Return the View you just created
-		return itemView; // itemLayout;
+		return itemView;
 
 	}
 }

@@ -1,58 +1,53 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/account_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:orientation="vertical" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
 
-        <TextView
-            android:id="@+id/account_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:textAppearance="?android:attr/textAppearanceLarge" >
-        </TextView>
+    <TextView
+        android:id="@+id/account_balance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/account_name"
+        android:text="@string/account_balance" >
+    </TextView>
 
-        <TextView
-            android:id="@+id/account_balance_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@id/account_name"
-            android:text="@string/account_balance" >
-        </TextView>
+    <TextView
+        android:id="@+id/account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/account_balance_label"
+        android:layout_alignParentRight="true" >
+    </TextView>
 
-        <TextView
-            android:id="@+id/account_balance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/account_balance_label"
-            android:layout_alignParentRight="true" >
-        </TextView>
+    <TextView
+        android:id="@+id/account_saving_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/account_balance_label"
+        android:layout_marginTop="17dp"
+        android:text="@string/saving_points" >
+    </TextView>
 
-        <TextView
-            android:id="@+id/account_saving_points_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignTop="@id/account_balance_label"
-            android:layout_marginTop="17dp"
-            android:text="@string/saving_points" >
-        </TextView>
+    <TextView
+        android:id="@+id/account_saving_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/account_saving_points_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/account_balance_label" >
+    </TextView>
 
-        <TextView
-            android:id="@+id/account_saving_points"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/account_saving_points_label"
-            android:layout_alignTop="@id/account_balance_label"
-            android:layout_alignParentRight="true" >
-        </TextView>
-    </RelativeLayout>
-
-</ScrollView>
+</RelativeLayout>
