@@ -130,7 +130,7 @@ public class LoginFragment extends DialogFragment {
             mPasswordView.setError(getString(R.string.error_field_required));
             viewWithError = mPasswordView;
         } else if (mPassword.length() < 4) {
-            mPasswordView.setError(getString(R.string.error_invalid_password));
+            mPasswordView.setError(getString(R.string.error_invalid_pin));
             viewWithError = mPasswordView;
         }
 
@@ -230,7 +230,7 @@ public class LoginFragment extends DialogFragment {
                 activity.onLogin(true);
                 dismiss();
             } else {
-                mPasswordView.setError(getString(R.string.error_incorrect_password));
+                mPasswordView.setError(getString(R.string.error_incorrect_pin));
                 mPasswordView.requestFocus();
             }
         }

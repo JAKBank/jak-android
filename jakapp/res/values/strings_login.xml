@@ -4,13 +4,13 @@
 
     <!-- Strings related to login -->
     <string name="prompt_ssn">Social security number</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_pin">PIN code</string>
     <string name="action_sign_in">Sign in</string>
-    <string name="action_forgot_password">Recover lost password</string>
+    <string name="action_forgot_pin">Recover lost PIN code</string>
     <string name="login_progress_signing_in">Signing in&#8230;</string>
     <string name="error_invalid_ssn">This social security number is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_pin">This PIN code is too short</string>
+    <string name="error_incorrect_pin">This PIN code is incorrect</string>
     <string name="error_field_required">This field is required</string>
 
 </resources>
